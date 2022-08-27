@@ -1,0 +1,47 @@
+div.FullServiceMenuStep1{
+    div.flexStep1{
+        div.contentFull{
+            div.groupStep{
+                div.detail{
+                    margin-right: 8px;
+                }
+                div.fontSteps{
+                    width: 186px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    padding-bottom: 12px;
+                }
+            }
+            div.RestaurantName{
+                label.QR{
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    div.FullServiceMenuStep1{
+        div.flexStep1{
+            div.contentFull{
+                div.groupStep{
+                    div.detail{
+                        width: 150px;
+                    }
+                    div.QR{
+                        width: 150px;
+                    }
+                }
+                div.RestaurantName{
+                    label.QR{
+                        margin-top: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

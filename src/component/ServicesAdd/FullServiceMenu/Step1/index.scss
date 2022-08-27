@@ -1,0 +1,323 @@
+div.FullServiceMenuStep1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    div.flexStep1{
+        display: flex;
+        flex-direction: row;
+        div.contentFull{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px;
+            max-width: 440px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            margin: 73px 100px 155px ;
+            div.iconBack{
+                margin-bottom: 24px;
+            }
+            div.groupStep{
+                display: flex;
+                flex-direction: row;
+                div.fontStep{
+                    width: 121.33px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 100%;
+                    padding-bottom: 12px;
+                    border-bottom: 10px solid #DADADA;
+                }
+                div.DishMenu{
+                    margin: 0px 8px;
+                }
+                div.colorF96F37{
+                    color: #F96F37;
+                    border-bottom: 10px solid #F96F37;
+                }
+            }
+            p.step{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+                color: #636A82;
+                margin: 24px 0px 8px;
+            }
+            h1.titleStep{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 28px;
+                letter-spacing: -0.5px;
+                color: #1A2649;
+                margin-bottom: 40px;
+            }
+            input.fileImg{
+                width: 380px;
+                height: 100px;
+            }
+            label.form-label{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #1A2649;
+                margin: 24px 0px 8px;                    
+                span{
+                    color:#F96F37;
+                }
+            }
+            input, div.day{
+                width: 380px;
+                padding: 12px;
+                background: #F7F7F7;
+                border: #F7F7F7;
+                border-radius: 6px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #636A82;
+            }
+            span#addon-wrapping{
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+            div#dropdownMenuButton1{
+                margin: -42px 0px 0px 330px;
+            }
+            option{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 380px;
+                height: 48px;
+                background: #F7F7F7;
+                border: #F7F7F7;
+                border-radius: 6px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+            div.formRestaurantTag{
+                div.css-1s2u09g-control{
+                    width: 380px;
+                    background: #F7F7F7;
+                    border: #F7F7F7;;
+                    border-radius: 6px;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+                div.css-319lph-ValueContainer{
+                    width: 345px;
+                }
+                div.css-1rhbuit-multiValue{
+                    background: #DADADA;
+                    border-radius: 20px;
+                }
+                div.css-g1d714-ValueContainer{
+                    width: 345px;
+                    
+                }
+            }
+            
+            div.RestaurantCurrency{
+                select.form-select{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 12px 16px;
+                    gap: 8px;
+                    width: 380px;
+                    height: 48px;
+                    background: #F7F7F7;
+                    border: #F7F7F7;
+                    border-radius: 6px;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+            }
+            div.groupButton{
+                display: flex;
+                flex-direction: row;
+                margin-top: 24px;
+                button.buttons{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px;
+                    gap: 10px;
+                    border-radius: 6px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+                }
+                button.Back{
+                    width: 182px;
+                    height: 48px;
+                    background: #DADADA;
+                    border: #DADADA;
+                    color: #636A82; 
+                    margin-right: 16px;                   
+                }
+                button.Next{
+                    width: 182px;
+                    height: 48px;
+                    background: #F96F37;
+                    border: #F96F37;
+                    color: #FFFFFF;                    
+                }
+            }
+        }
+        div.ImgFull{
+            margin: 50px 50px 50px 0px
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    div.FullServiceMenuStep1{
+        div.flexStep1{
+            display: flex;
+            flex-direction: column;
+            div.flexcontentFull{
+                display: flex;
+                justify-content: center;
+                div.contentFull{
+                    margin: 50px 0px 50px ;
+                }
+            }
+            div.ImgFull{
+                margin:0px 0px 50px 0px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    div.FullServiceMenuStep1{
+        div.flexStep1{
+            div.ImgFull{
+                width: 550px;
+                img.ImgFull{
+                    width: 550px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    div.FullServiceMenuStep1{
+        div.flexStep1{
+            div.flexcontentFull{
+                div.contentFull{
+                    padding: 20px;
+                    div.iconBack{
+                        margin-bottom: 24px;
+                    }
+                    div.groupStep{
+                        div.fontStep{
+                            width: 95px;
+                            font-size: 11px;
+                        }
+                    }
+                    p.step{
+                        font-size: 12px;
+                    }
+                    h1.titleStep{
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    div.input-group {
+                        width: 300px;
+                        height: 100px;
+                    }
+                    label.form-label{
+                        font-size: 14px;
+                        margin: 16px 0px 8px;                    
+                    }
+                    input, div.day{
+                        width: 300px;
+                        padding: 12px;
+                        font-size: 14px;
+                    }
+                    div#dropdownMenuButton1{
+                        margin: -42px 0px 0px 255px;
+                    }
+                    option{
+                        width: 300px;
+                        height: 48px;
+                    }
+                    div.formRestaurantTag{
+                        div.css-1s2u09g-control{
+                            width: 300px;
+                        }
+                        div.css-319lph-ValueContainer{
+                            width: 255px;
+                        }
+                        div.css-g1d714-ValueContainer{
+                            width: 255px;
+                            
+                        }
+                    }
+                    
+                    div.RestaurantCurrency{
+                        select.form-select{
+                            padding: 12px 16px;
+                            width: 300px;
+                            height: 48px;
+                        }
+                    }
+                    div.groupButton{
+                        margin-top: 24px;
+                        button.buttons{
+                            padding: 12px;
+                            font-size: 14px;
+                        }
+                        button.Back{
+                            width: 142px;
+                            height: 48px; 
+                            margin-right: 16px;                   
+                        }
+                        button.Next{
+                            width: 142px;
+                            height: 48px;                   
+                        }
+                    }
+                }
+            }
+            div.ImgFull{
+                margin:0px 0px 50px 20px;
+                width: 300px;
+                img.ImgFull{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}

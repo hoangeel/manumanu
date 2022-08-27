@@ -1,0 +1,203 @@
+div.setup{
+    display: flex;
+    justify-content: center;
+    div.flexSetup{
+        display: flex;
+        flex-direction: column;
+        padding-top: 8px ;
+        div.Account{
+            background: #FFFFFF;
+            border: 1px solid #EAEAEA;
+            border-radius: 6px;
+            width: 818px;
+            padding: 24px;
+            margin-top: 24px;
+            h2.Account{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: -0.5px;
+                color: #1A2649; 
+                margin-bottom: 8px;   
+            }
+            div.groupCard{
+                display: flex;
+                flex-direction: row;
+                margin: 24px 0px 0px;
+                div.groupText{
+                    width: 660px;
+                    p.headerText{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.5px;
+                        color: #1A2649;
+                        margin-bottom: 6px;
+                    }
+                    p.contentText{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: -0.5px;
+                        color: #636A82;
+                        margin: 0px;
+                    }
+                }
+                button.buttonChange{
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    height: 40px;
+                    background: #636A82;
+                    border-radius: 6px; 
+                    border: 0px;   
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: #FFFFFF; 
+                    padding: 0px;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }                     
+                }
+            }
+            p.Disabling{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: -0.5px;
+                color: #636A82;
+            }
+            div.groupButton{
+                button.DisableAccount{
+                    justify-content: center;
+                    align-items: center;
+                    width: 173px;
+                    height: 40px;
+                    background: #D24A3E;
+                    border-radius: 6px;
+                    border: 0px;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding: 0px;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }  
+                }
+                button.DeactivateService{
+                    justify-content: center;
+                    align-items: center;
+                    width: 189px;
+                    height: 40px;
+                    background: #FFFFFF;
+                    border: 1px solid #636A82;
+                    border-radius: 6px; 
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: #636A82; 
+                    margin-left: 10px; 
+                    padding: 0px;
+                    &:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }                
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    div.setup{
+        div.flexSetup{
+            div.Account{
+                width: 600px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    div.setup{
+        div.flexSetup{
+            div.Account{
+                width: 500px;
+                div.groupCard{
+                    button.buttonChange{
+                        font-size: 12px; 
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    div.setup{
+        div.flexSetup{
+            div.Account{
+                width: 300px;
+                padding: 24px 15px;
+                h2.Account{
+                    font-size: 18px;  
+                }
+                div.groupCard{
+                    div.groupText{
+                        p.headerText{
+                            font-size: 12px;
+                            margin-bottom: 0px;
+                        }
+                        p.contentText{
+                            font-size: 12px;
+                        }
+                    }
+                    button.buttonChange{
+                        width: 100px;
+                        height: 40px;
+                        font-size: 12px;
+                        padding: 0px 5px;                    
+                    }
+                }
+                p.Disabling{
+                    font-size: 12px;
+                }
+                div.groupButton{
+                    button.DisableAccount{
+                        width: 120px;
+                        font-size: 10px;
+                    }
+                    button.DeactivateService{
+                        width: 120px;
+                        font-size: 10px; 
+                        margin-left: 10px; 
+                    }
+                }
+            }
+            
+        }
+    }
+}

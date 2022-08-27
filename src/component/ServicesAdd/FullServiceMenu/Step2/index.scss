@@ -1,0 +1,145 @@
+div.FullServiceMenuStep1{
+    div.flexStep1{
+        div.contentFull{
+            div.iconBack{
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+            button.NewDish{
+                width: 380px;
+                height: 48px;
+                background: #F7F7F7;
+                border: 1px dashed rgba(99, 106, 130, 0.2);
+                border-radius: 6px; 
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #F96F37; 
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }              
+            }
+            div.backgroundModal{
+                background: #FFFFFF;
+            }
+            div.allDish{
+                width: 380px;
+                margin-top: 24px;
+                display: flex;
+                flex-direction: row;
+                div.groupHeader{
+                    width: 380px;
+                    div.dishName{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 26px;
+                        letter-spacing: -0.5px;
+                        color: #1A2649;
+                    }
+                    h6.dishContent{
+                        margin: 6px 0px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        letter-spacing: -0.5px;
+                        color: #636A82;
+                    }
+                    p.dishPrice{
+                        margin: 0px;
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 150%;
+                        letter-spacing: -0.5px;
+                        color: #F96F37;
+                    }
+                }
+                div.groupDeleteEdit{
+                    display: flex;
+                    flex-direction: row;
+                    div.edit{
+                        margin: 0px 10px;
+                        &:hover{
+                            cursor: pointer;
+                            opacity: 0.7;
+                        }
+                    }
+                    div.delete{
+                        &:hover{
+                            cursor: pointer;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+            button.done{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 12px;
+                gap: 10px;
+                width: 380px;
+                height: 48px;
+                background: #F96F37;
+                border: #F96F37;
+                border-radius: 6px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-top: 24px;
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    div.FullServiceMenuStep1{
+        div.flexStep1{
+            div.contentFull{
+                div.modal-dialog{
+                    margin-left: -0.5px;
+                }
+                button.NewDish{
+                    width: 300px;
+                    height: 48px;
+                    font-size: 14px;             
+                }
+                div.allDish{
+                    width: 300px;
+                    margin-top: 24px;
+                    div.groupHeader{
+                        width: 300px;
+                    }
+                }
+                button.done{
+                    padding: 12px;
+                    gap: 10px;
+                    width: 300px;
+                    height: 48px;
+                    font-size: 14px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}
