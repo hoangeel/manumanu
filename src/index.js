@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./index.scss"
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap'
@@ -10,7 +11,7 @@ import Home from './component/Home/HomeFull';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div>
+    <div className='manumanu'>
       <ReactRouters/>
     </div>
   </React.StrictMode>,

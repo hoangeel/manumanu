@@ -20,6 +20,9 @@ export default function Home() {
   const [full, setFull] = useState("buttonHome homeFull colorF96F37");
   const [qr, setQr] = useState("buttonHome homeQR");
   const [setup, setSetup] = useState('buttonHome homeAccount');
+  const [iconFull, setIconFull] = useState(HomeFull);
+  const [iconQR, setIconQR] = useState(IconQR);
+  const [iconSetup, setIconSetup] = useState(HomeAccount);
 
   const delay = ms => new Promise(
     resolve => setTimeout(resolve, ms)
@@ -38,54 +41,67 @@ export default function Home() {
     setFull("buttonHome homeFull colorF96F37")
     setQr("buttonHome homeQR")
     setSetup('buttonHome homeAccount')
+    setIconFull(HomeFull)
+    setIconQR(IconQR)
+    setIconSetup(HomeAccount)
   }
   function qrClick() {
     setCounter(1)
     setFull("buttonHome homeFull ")
     setQr("buttonHome homeQR colorF96F37")
     setSetup('buttonHome homeAccount')
+    setIconFull(HomeAccount)
+    setIconQR(HomeFull)
+    setIconSetup(HomeAccount)
   }
   function setupClick() {
     setCounter(2)
     setFull("buttonHome homeFull")
     setQr("buttonHome homeQR")
     setSetup('buttonHome homeAccount colorF96F37')
+    setIconFull(IconQR)
+    setIconQR(IconQR)
+    setIconSetup(HomeFull)
   }
 
   return (
-    <div className='home'>
-        <div className='flexHome'>
-            <div className='headerSeach'>
-                <div className='logoHome'><img src={LogoHome} alt="LogoHome" /></div>
-                <div className="seachHome input-group rounded">
-                    <input type="search" className="seachHome form-control rounded" placeholder="Search here" aria-label="Search here" aria-describedby="search-addon" />
-                    <span className="seachHome input-group-text border-0" id="search-addon">
-                        <img src={IconSeach} alt="" />
-                    </span>
-                </div>
-            </div>
-            <div className='headerContent'>
-                <h1 className='Welcome'>Welcome Back, Jay 👋</h1>
-                <div className='groupButtonHome'>
-                  <div className={full} onClick={fullClick}>
-                      <span className='iconHome'><img src={HomeFull} alt="HomeFull" /></span>
-                      Full Menu Service
+    <>
+      <div className='home'>
+          <div className='flexHome'>
+              <div className='headerSeach'>
+                  <div className='logoHome'><img src={LogoHome} alt="LogoHome" /></div>
+                  <div className="seachHome input-group rounded">
+                      <input type="search" className="seachHome form-control rounded" placeholder="Search here" aria-label="Search here" aria-describedby="search-addon" />
+                      <span className="seachHome input-group-text border-0" id="search-addon">
+                          <img src={IconSeach} alt="" />
+                      </span>
                   </div>
-                  <div className={qr} onClick={qrClick}>
-                      <span className='iconHome'><img src={IconQR} alt="HomeQR" /></span>
-                      QR Redirect
+              </div>
+              <div className='headerContent'>
+                  <h1 className='Welcome'>Welcome Back, Jay 👋</h1>
+                  <div className='groupButtonHome'>
+                    <div className={full} onClick={fullClick}>
+                        <span className='iconHome'><img src={iconFull} alt="HomeFull" /></span>
+                        Full Menu Service
+                    </div>
+                    <div className={qr} onClick={qrClick}>
+                        <span className='iconHome'><img src={iconQR} alt="HomeQR" /></span>
+                        QR Redirect
+                    </div>
+                    <div className={setup} onClick={setupClick}>
+                        <span className='iconHome'><img src={iconSetup} alt="HomeAccount" /></span>
+                        Account Setup
+                    </div>
                   </div>
-                  <div className={setup} onClick={setupClick}>
-                      <span className='iconHome'><img src={HomeAccount} alt="HomeAccount" /></span>
-                      Account Setup
-                  </div>
-                </div>
-            </div>
-            <div className='contentHome'>
-              {counter === 0 ? render : counter === 1 ? <HomeQR/>: <HomeSetup/>}
-            </div>
+              </div>
+          </div>
+      </div>
+      <div className='home backgroundHome'>
+        <div className='contentHome'>
+          {counter === 0 ? render : counter === 1 ? <HomeQR/>: <HomeSetup/>}
         </div>
-    </div>
+      </div>
+    </>
   )
 }
 
